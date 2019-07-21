@@ -600,11 +600,14 @@ input {
 
 @media (min-width: 800px) {
     .about-us-pic {
+        margin-left: 1em;
+        width: 42%;
         max-width: 690px;
         display: inline-block;
         vertical-align: middle;
     }
     .about-us-inner-wrapper {
+        width: 57%;
         max-width: 654px;
         display: inline-block;
         vertical-align: middle;
