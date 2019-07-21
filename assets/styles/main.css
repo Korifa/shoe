@@ -1,0 +1,628 @@
+@import url('reset.css');
+@import url('typography.css');
+
+:root {
+    --main-color: #82f4d3;
+    --second-color: #e9e9e9;
+    --main-font: 'PoppinsRegular';
+    --logo-font: 'UbuntuMedium';
+    --headline-font: 'CormorantgaramondMedium';
+    --bold-font: 'PoppinsBold';
+    --nike-font: 'RobotoBold';
+    --price-font: 'RobotoRegular';
+    --text-font: 'PoppinsLight';
+    --block-shadow: 0 0 20px 5px rgba(233,233,233,0.75);
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    background-clip: border-box;
+}
+body {
+    font: 0.9375em var(--main-font);
+}
+header {
+    background: linear-gradient(78deg, var(--second-color) 0% 50%, var(--main-color)50% 100%);
+}
+
+.outer-wrapper {
+    max-width: 1405px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.inner-wrapper {
+    flex: 0 0 83.2%;
+    max-width: 1170px;
+    margin: 0 auto 2.5em;
+    overflow: hidden;
+}
+.header-inner-wrapper {
+    border: 1px solid transparent;
+}
+
+.header-logo-nav-cont {
+    margin-top: 3.75em;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--main-color);
+    text-decoration: none;
+    font: 1.5625rem var(--logo-font);
+}
+.logo::before {
+    content: url('../images/logo.svg');
+    display: inline-block;
+    margin-right: 0.2em;
+    vertical-align: middle;
+}
+
+.header-logo i {
+    color: #000;
+    font-style: normal;
+}
+.nav-help-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;
+}
+.circle {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.header-nav {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+}
+.header-nav::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: 
+    linear-gradient(
+        to top, #fff 0 3.6px, #000 3.6px 7.2px, #fff 7.2px 10.8px, #000 10.8px 14.4px, #fff 14.4px 18px
+        )
+}
+
+.header-title {
+    font: 9.375rem var(--nike-font);
+    margin-top: 0.7em;
+}
+.buyBrand {
+    display: block;
+    font: 1.1rem var(--bold-font);
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 0.8em;
+    letter-spacing: 5px;
+    background: var(--main-color);
+    position: relative;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.buyBrand:active {
+    transform: translate(-8px,9px);
+}
+.buyBrand:active::after {
+    top: -1px; right: 0;
+}
+
+.buyBrand::after {
+    content: '';
+    display: block;
+    width: calc(100% + 2.6px);
+    height: 56.8px;
+    border: 1.5px solid var(--main-color);
+    top:8px; right: 8px;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+.header-buyBrand {
+    margin-left: 3em;
+}
+
+.header-shoe-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.header-text {
+    max-height: 340px;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+}
+
+.header-outer-wrapper .header-social,
+.header-outer-wrapper .header-text {
+    flex: 0 0 8.4%;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+.header-text {
+    margin-bottom: 5em;
+}
+
+.header-social {
+    width: 58px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+.header-social a {
+    display: block;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #fff;
+}
+.header-social .twitter:hover path {
+    fill: #fff;
+}
+.header-social .twitter:hover  {
+    background: transparent;
+}
+.header-social .facebook:hover path {
+    fill: #fff;
+}
+.header-social .facebook:hover  {
+    background: transparent;
+}
+.header-social .google:hover path {
+    fill: #fff;
+}
+.header-social .google:hover  {
+    background: transparent;
+}
+.header-social .dribble:hover path {
+    fill: #fff;
+}
+.header-social .dribble:hover  {
+    background: transparent;
+}
+
+.about-us > .about-us-outer-wrapper {
+    margin-top: 8.6em;
+    display: block;
+}
+.about-us-pic {
+    width: 90%;
+    margin: 0 auto;
+    height: 91vw;
+    max-height: 595px;
+    background: var(--second-color) url('../images/shoe.png') no-repeat center center;
+    border: 8px solid #fff;
+    box-shadow: var(--block-shadow);
+}
+.about-us-inner-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    position: relative;
+}
+.about-us-outer-wrapper {
+    overflow: visible;
+}
+.headline {
+    font: 2.8rem var(--headline-font);
+}
+.text {
+    font-family: var(--text-font);
+    color: #888;
+    line-height: 2;
+}
+.abour-us-text {
+    max-width: 83%;
+}
+.button-s {
+    padding: 1em;
+    background: var(--main-color);
+    position: relative;
+    width: 147px;
+    transition: all 0.2s ease;
+    outline: none;
+}
+.button-s:active {
+    transform: translate(-10px, -10px);
+}
+.button-s:active::after {
+    top: 0;
+    left: 0;
+}
+
+.button-s::after {
+    content: '';
+    display: block;
+    width: calc(100% + 2px);
+    height: 48px;
+    border: 1px solid var(--main-color);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transition: all 0.2s ease;
+}
+.about-us-text + .button-s {
+    margin-top: 2.2em;
+    float: right;
+}
+
+.popupalItems {
+    border: 1px solid transparent;
+}
+
+.popularItems-headline {
+    font: 2.815rem var(--headline-font);
+}
+.popupalItems-inner-wrapper > .popularItems-headline {
+    margin-top: 2em;
+    margin-bottom: 1.222em;
+}
+.popularItems-cont-elements {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.popularItems-element-img {
+    width: 250px;
+    height: 304px;
+    background: var(--second-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.popularItems-element-img:hover::after {
+    content: '';
+    display: block;
+    width: 230px;
+    top: 10px; left: 10px;
+    height: 284px;
+    background: rgba(130,244,211, 0.50);
+    position: absolute;
+    z-index: 10;
+}
+.popularItems-element-img:hover::before {
+    content: 'View Details';
+    display: block;
+    color: #fff;
+    padding: 0.9em 1.9em;
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 40;
+    cursor: pointer;
+}
+.element-desc {
+    margin-top: 3.7em;
+    margin-bottom: 1.4em;
+}
+.element-desc b {
+    color: var(--second-color);
+    margin-left: 1.4em;
+}
+.price {
+    font: 1.5625rem var(--price-font);
+    color: #999;
+}
+
+.preCollection-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.preCollection-desc {
+    width: 90%
+}
+.preCollection-pic {
+    width: 90%;
+    height: 89vw;
+    background: url('../images/preCollection.jpg') no-repeat center center;
+    border: 6px solid rgba(255,255,255,.8);
+    margin-top: 10px;
+    box-shadow: var(--block-shadow);
+    position: relative;
+    margin-bottom: 104px;
+}
+
+.preCollection-pic::before {
+    content: '';
+    display: block;
+    width: 290px;
+    height: 388px;
+    background: var(--main-color);
+    bottom: -105px;
+    right: -105px;
+    position: absolute;
+    z-index: -1;
+}
+
+.preCollection {
+    margin-top: 5em;
+    overflow: hidden;
+}
+.preCollection-desc .preCollection-desc-text{
+    margin-top: 2.8em;
+}
+.preCollection-desc .button-s {
+    margin-top: 3.46em;
+    position: relative;
+    left: 10px;
+}
+.preCollection-wrapper {
+    margin-bottom: 7em;
+}
+.weThought {
+    border: 1px solid transparent;
+}
+.weThought-outer-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6.666em;
+    margin-bottom: 6.666em;
+}
+.weThought-text-cont {
+    flex: 0 0 100%;
+    padding: 0.5em;
+    order: 1;
+    text-align: center;
+}
+.weThought-btn-left {
+    order: 2;
+}
+.weThought-btn-right {
+    order: 3;
+}
+
+.weThought {
+    background: var(--second-color);
+    color: #888;
+}
+.weThought-headline {
+    color: #000;
+}
+.weThought-text-cont .text {
+    margin-top: 1.66em;
+}
+.weThought-btn {
+    width: 115px;
+    border-bottom: 1px solid #888;
+    height: 20px;
+}
+
+.weThought-btn-left {
+    border-left: 1px solid #888;
+    transform-origin: 0% 100%;
+    transform: skewX(-57.2deg);
+}
+.weThought-btn-right {
+    border-right: 1px solid #888;
+    transform-origin: 100% 100%;
+    transform: skewX(57.2deg);
+}
+.author {
+    display: block;
+    font-style: normal;
+    font-weight: bolder;
+}
+.author span {
+    display: block;
+    color: var(--main-color);
+}
+.weThought-text .author {
+    margin-top: 2em;
+}
+
+.blog-flex-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    margin:0 auto;
+    position: relative;
+    z-index: 10;
+}
+.blog-inner-wrapper > .headline {
+    margin-top: 2.222em;
+    margin-bottom: 1.44em;
+    text-align: center;
+}
+
+.blog-text-headline {
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.blog-text-cont .headline {
+    margin-bottom: 1.5em;
+}
+
+.blog-text {
+    line-height: 1.6;
+    width: 100%;
+    max-width: 580px;
+}
+.blog-text-cont .text {
+    margin-bottom: 4em;
+}
+.blog-text-cont .button-s {
+    float: right;
+}
+.blog-pic-cont {
+    width: 100%;
+    max-width: 440px;
+    height: 110vw;
+    max-height: 474px;
+    border: 4px solid #fff;
+    box-shadow: var(--block-shadow);
+    background: url('../images/blogShoesPhoto.jpg') no-repeat center center;
+    position: relative;
+}
+
+.blog-pic-cont::before {
+    content: '';
+    display: block;
+    width: 290px;
+    height: 370px;
+    border: 9px solid #f7f3f3;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    transition: all 3s ease-in-out;
+}
+
+.blog-pic-cont::after {
+    content: 'Nike';
+    color: #abf3dd;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    font-family: var(--price-font);
+    display: flex;
+    align-items: flex-end;
+    font-size: 178px;
+    line-height: 0.7;
+    width: 265px;
+    height: 350px;
+    background: linear-gradient(124deg, rgba(100,232,194,.8) 50%, rgba(212,252,240,.3) 100%);
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+    transition: all 3s ease-in-out;
+}
+.blog-inner-wrapper {
+    overflow: visible;
+    margin-bottom: 16.1em;
+}
+
+.footer-inner-wrapper {
+    border-top: 2px solid var(--second-color);
+    border-bottom: 2px solid var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3.33em; padding-bottom: 3.33em;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+.footer-info-block ul li {
+    list-style: none;
+}
+.footer-nal-link,
+.footer-info-block ul li a,
+.footer-subscribe a {
+    text-decoration: none;
+    color: #888;
+}
+::placeholder {
+    color: #ddd;
+}
+input {
+    width: 305px;
+    margin-top: 1.6em;
+    border: none;
+    padding: 1em;
+    padding-left: 2em;
+    box-shadow: var(--block-shadow);
+}
+.form-btn::after {
+    display: none;
+}
+.footer-logo i {
+    color: #000;
+    font-style: normal;
+}
+@media (min-width: 600px) {
+    .popularItems-cont-elements,
+    .preCollection-wrapper {
+        flex-direction: row;
+        overflow: initial;
+    }
+    .preCollection {
+        margin-top: 8em;
+    }
+    .preCollection-desc {
+        width: 47.86%;
+    }
+    .preCollection-pic {
+        width: 41.8%;
+        height: 44.6vw;
+        max-height: 515px;
+    }
+    .weThought-text-cont {
+        order: 2;
+        flex: 0 0 60%;
+        padding: 0;
+    }
+    .weThought-btn-left {
+        order: 1;
+    }
+    .weThought-btn-right {
+        order: 3;
+    }
+    .weThought-btn {
+        max-width: 115px;
+    }
+    .footer-inner-wrapper {
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 800px) {
+    .about-us-pic {
+        max-width: 690px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .about-us-inner-wrapper {
+        max-width: 654px;
+        display: inline-block;
+        vertical-align: middle;
+        left: -3.5%;
+    }
+    .blog-flex-cont {
+        flex-direction: row;
+    }
+    .blog-pic-cont {
+        margin-bottom: 9px;
+    }
+    .blog-pic-cont {
+        margin-left: 50px;
+    }
+    .blog-pic-cont::before {
+        transform: translate(-59px,-45px);
+    }
+    .blog-pic-cont::after {
+        transform: translate(144px,134px) rotate(-180deg);
+    }
+}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('../fonts/poppins/Poppinsbold.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url('../fonts/poppins/Poppinslight.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/poppins/Poppinsregular.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UbuntuMedium';
+    src: url('../fonts/ubuntu/ubuntumedium.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/roboto/Roboto.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/roboto/Robotobold.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/roboto/Robotomedium.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CormorantgaramondMedium';
+    src: url('../fonts/cormorantgaramond/Cormorantgaramondsemibold.woff')
+    format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
